@@ -1,0 +1,25 @@
+{
+    "name": "servicehub",
+    "version": "1.0.0",
+    "author": {
+        "name": "Hiroshi.Tao",
+        "email": "me@tcw.im"
+    },
+    "private": true,
+    "source": "index.html",
+    "scripts": {
+        "start": "parcel serve --host 0.0.0.0 --dist-dir /tmp/parcel-dist --cache-dir /tmp/parcel-cache",
+        "prebuild": "rm -rf dist",
+        "build": "parcel build --no-source-maps --public-url . --dist-dir dist --cache-dir /tmp/parcel-cache"
+    },
+    "dependencies": {
+        "bulma": "^0.9.4"
+    },
+    "devDependencies": {
+        "@parcel/config-default": "^2.11.0",
+        "@parcel/transformer-sass": "2.11.0",
+        "parcel": "^2.11.0",
+        "parcel-transformer-markdown": "^3.0.1",
+        "posthtml-include": "^1.7.4"
+    }
+}
