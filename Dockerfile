@@ -13,4 +13,4 @@ FROM $runos
 COPY --from=builder /app/dist/* /app/public/
 EXPOSE 1234
 WORKDIR /app
-CMD ["--port", "1234"]
+ENTRYPOINT ["/static-web-server", "--port", "1234"]

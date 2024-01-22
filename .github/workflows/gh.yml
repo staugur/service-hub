@@ -1,0 +1,40 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  # 任务名称
+  build-and-deploy:
+    # 任务运行的容器类型（虚拟机环境）
+    runs-on: ubuntu-latest
+    # 任务执行的步骤
+    steps:
+      # 步骤名称
+      - name: Checkout ️    # 拉取代码
+        # 使用的操作 actions，可以使用公共仓库，本地仓库，别人的仓库的action
+        uses: actions/checkout@v4 # 将代码拷贝到虚机中
+        with:
+          fetch-depth: 1
+      # 设置 nodejs 版本
+      - name: SetNodeVersion
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      # nodejs 版本检查
+      - name: NodeCheck
+        run: node -v
+      - name: Install and Build
+        run: |
+          yarn install
+          yarn run build
+        # 构建发布 Github pages
+      - name: Deploy 
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          # 存储库中要部署的文件夹。
+          # 该步骤会将项目中 FOLDER 指定文件夹下的文件推送到 BRANCH 分支，作为Github Pages 部署的内容。
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist # The folder the action should deploy.
