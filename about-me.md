@@ -9,8 +9,7 @@
 - 工作：8年+ 
 - 擅长：运维、全栈开发
 - 联系方式：
-    - QQ: 1663116375
-    - VX: 1663116375
+    - QQ/VX: 1663116375
     - Email: me@tcw.im
     - Telegram: [o0o1o1o0](https://t.me/o0o1o1o0)
     - 特殊项目请使用 Email 或 Telegram 联系！
