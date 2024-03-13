@@ -8,7 +8,6 @@
 
 - 工作：8年+ 
 - 擅长：运维、全栈开发
-- GitHub：<https://github.com/staugur>
 - 联系方式：
     - QQ: 1663116375
     - VX: 1663116375
@@ -20,9 +19,7 @@
 
 - 企业向软件&应用服务、个人向软件&解决方案
 
-- Linux（CentOS、Ubuntu、Alpine、Kylin...）
-
-- Windows Server / macOS
+- Linux / Windows Server / macOS
 
 - 关系型与非关系型数据库
 
@@ -33,3 +30,8 @@
 - 后端：Python、Golang、PHP
 
 - 前端：HTML/CSS/JavaScript、Vue.js、Node.js
+
+### 服务价格
+
+- 运维类设有基础价格，开发类需要另议。
+- 可开发票，价格另议。
